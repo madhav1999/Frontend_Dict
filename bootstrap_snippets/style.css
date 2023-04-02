@@ -1,0 +1,23 @@
+/* Style for buttons */
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for modals */
+  .modal-dialog {
+    max-width: 90%;
+  }
+  
+  .modal-body pre {
+    white-space: pre-wrap;
+  }
+  

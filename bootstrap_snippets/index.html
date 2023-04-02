@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Code Snippets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="custom.js"></script>
+</head>
+<body>
+	<div class="container pt-3">
+		<h1>Bootstrap Code Snippets</h1>
+		<p>Click on a button to see an example of Bootstrap code:</p>
+		<div class="card-deck">
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">Alerts Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			  <button type="button" class="btn btn-primary code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#alert-example">Alerts</button>
+			  
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">Button Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			  <button type="button" class="btn btn-secondary code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#button-example">Buttons</button>
+	  
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">Form Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			  <button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#form-example">Forms</button>
+	  
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">Modal Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			  <button type="button" class="btn btn-primary code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#modal-example">Modal</button>
+	  
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">Card Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			  <button type="button" class="btn btn-secondary code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#card-example">Cards</button>
+	  
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">Tile Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+		<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#tile-example">Tile</button>
+			  
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">Grid Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+		<button type="button" class="btn btn-primary code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#grid-example">Grid</button>
+			  
+			</div>
+		</div>
+	</div>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="codeModalLabel">Code Snippet</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <pre><code></code></pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Code Snippets -->
+		<div class="d-none">
+			<div id="alert-example">
+<code>&lt;div class="alert alert-success" role="alert"&gt;
+  This is a success alert with &lt;a href="#" class="alert-link"&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class="alert alert-info" role="alert"&gt;
+    This is an info alert with &lt;a href="#" class="alert-link"&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class="alert alert-warning" role="alert"&gt;
+  This is a warning alert with &lt;a href="#" class="alert-link"&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger" role="alert"&gt;
+  This is an error alert with &lt;a href="#" class="alert-link"&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class="alert alert-light" role="alert"&gt;
+  This is a light alert with &lt;a href="#" class="alert-link"&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div class="alert alert-dark" role="alert"&gt;
+  This is a dark alert with &lt;a href="#" class="alert-link"&gt;an example link&lt;/a&gt;.
+&lt;/div&gt;
+
+</code>
+			</div>
+			<div id="button-example">
+<code>
+    &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-light"&gt;Light&lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-dark"&gt;Dark&lt;/button&gt;
+	
+    &lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;</code>
+			</div>
+			<div id="form-example">
+				<h6>
+					form-control: Used for styling form input elements like textboxes, dropdowns, etc.
+					form-label: Used for styling form labels.
+					form-text: Used for styling form helper text.
+					form-range: Used for styling range input elements.
+					form-select: Used for styling select input elements.
+					form-floating: Used for creating floating labels for input elements.
+					form-validation: Used for validating form input values on the client side.</h6>
+
+				<code>
+				  &lt;form&gt;
+					&lt;div class="form-group"&gt;
+					  &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+					  &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&gt;
+					  &lt;small id="emailHelp" class="form-text text-muted"&gt;We'll never share your email with anyone else.&lt;/small&gt;
+					&lt;/div&gt;
+					&lt;div class="form-group"&gt;
+					  &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+					  &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+					&lt;/div&gt;
+					&lt;div class="form-group form-check"&gt;
+					  &lt;input type="checkbox" class="form-check-input" id="exampleCheck1"&gt;
+					  &lt;label class="form-check-label" for="exampleCheck1"&gt;Check me out&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class="form-group"&gt;
+					  &lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;
+					  &lt;select class="form-control" id="exampleFormControlSelect1"&gt;
+						&lt;option&gt;1&lt;/option&gt;
+						&lt;option&gt;2&lt;/option&gt;
+						&lt;option&gt;3&lt;/option&gt;
+						&lt;option&gt;4&lt;/option&gt;
+						&lt;option&gt;5&lt;/option&gt;
+					  &lt;/select&gt;
+					&lt;/div&gt;
+					&lt;div class="form-group"&gt;
+					  &lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;
+					  &lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
+					&lt;/div&gt;
+					&lt;div class="form-group"&gt;
+					  &lt;div class="custom-file"&gt;
+						&lt;input type="file" class="custom-file-input" id="customFile"&gt;
+						&lt;label class="custom-file-label" for="customFile"&gt;Choose file&lt;/label&gt;
+					  &lt;/div&gt;
+					&lt;/div&gt;
+					&lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+				  &lt;/form&gt;
+				</code>
+
+
+			  </div>	
+			<div id="modal-example">
+			<code>&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"&gt;
+				Launch demo modal
+			&lt;/button&gt;
+			
+			&lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+				&lt;div class="modal-dialog" role="document"&gt;
+				&lt;div class="modal-content"&gt;
+					&lt;div class="modal-header"&gt;
+					&lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal title&lt;/h5&gt;
+					&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+						&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+					&lt;/button&gt;
+					&lt;/div&gt;
+					&lt;div class="modal-body"&gt;
+					&lt;p&gt;Modal body text goes here.&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="modal-footer"&gt;
+					&lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+					&lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;</code>
+			</div>
+			<div id="card-example">
+				<code>&lt;div class="card" style="width: 18rem;"&gt;
+				  &lt;img src="..." class="card-img-top" alt="..."&gt;
+				  &lt;div class="card-body"&gt;
+					&lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+					&lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+					&lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+				  &lt;/div&gt;
+				&lt;/div&gt;</code>
+			</div>
+			<div id="tile-example">
+				<code>&lt;div class="col-sm-6 col-md-4"&gt;
+				  &lt;div class="tile"&gt;
+					&lt;div class="tile-header"&gt;
+					  &lt;h3 class="tile-title"&gt;Tile Title&lt;/h3&gt;
+					  &lt;div class="controls"&gt;
+						&lt;a href="#" class="refresh"&gt;&lt;i class="fa fa-refresh"&gt;&lt;/i&gt;&lt;/a&gt;
+						&lt;a href="#" class="remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+					  &lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="tile-body"&gt;
+					  &lt;p&gt;Tile body text goes here.&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="tile-footer"&gt;
+					  &lt;a href="#" class="btn btn-primary"&gt;Learn More&lt;/a&gt;
+					&lt;/div&gt;
+				  &lt;/div&gt;
+				&lt;/div&gt;</code>
+			</div>
+			<div id="grid-example">
+				<code>
+				&lt;div class="container"&gt;
+				  &lt;div class="row"&gt;
+					&lt;div class="col-md-4"&gt;Column 1&lt;/div&gt;
+					&lt;div class="col-md-4"&gt;Column 2&lt;/div&gt;
+					&lt;div class="col-md-4"&gt;Column 3&lt;/div&gt;
+				  &lt;/div&gt;
+				&lt;/div&gt;
+				</code>
+				</div>
+								
+		</div>
+
+	</div>
+	<div class="container pt-5">
+		<h1>Bootstrap Styling Snippets</h1>
+		<p>Click on a button to see an example of Bootstrap Styling code:</p>
+
+		<div class="card-deck">
+			<div class="card" style="width: 18rem;">
+				<!-- <img src="..." class="card-img-top" alt="..."> -->
+				<div class="card-body">
+				<h5 class="card-title">Grid Snippet</h5>
+				<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#grid-example">Grid</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Padding Margin</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#padding-margin-example">Padding-Margin</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">bgcolor</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#bgcolor-example">bgcolor</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Text color</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#textcolor-example">textcolor</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Display</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#display-example">display</button>  
+				</div>
+			</div>
+		</div>
+		<div class="card-deck pt-3">
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Width</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#width-example">width</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Spacing</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#spacing-example">Spacing</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Shadows</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#shadows-example">Shadows</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Alignment</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#alignment-example">Alignment</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Position</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#position-example">Position</button>  
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Visible</h5>
+					<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			<button type="button" class="btn btn-info code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#visible-example">Visible</button>  
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="codeModalLabel">Code Snippet</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+				  <pre><code></code></pre>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="d-none">
+		  <div id="grid-example">
+			<code>
+			&lt;div class="container"&gt;
+			  &lt;div class="row"&gt;
+				&lt;div class="col-md-4"&gt;Column 1&lt;/div&gt;
+				&lt;div class="col-md-4"&gt;Column 2&lt;/div&gt;
+				&lt;div class="col-md-4"&gt;Column 3&lt;/div&gt;
+			  &lt;/div&gt;
+			&lt;/div&gt;
+			</code>
+		  </div>
+		  <div id="padding-margin-example">
+			<code>
+				Padding and Margin Classes
+				p-*: sets padding. * can be a value from 0 to 5. Eg: p-4 sets padding to 1.5rem.
+				m-*: sets margin. * can be a value from 0 to 5. Eg: m-3 sets margin to 1rem.
+				pt-*: sets top padding. * can be a value from 0 to 5. Eg: pt-2 sets top padding to 0.5rem.
+				mt-*: sets top margin. * can be a value from 0 to 5. Eg: mt-1 sets top margin to 0.25rem.
+				pb-*: sets bottom padding. * can be a value from 0 to 5. Eg: pb-3 sets bottom padding to 1rem.
+				mb-*: sets bottom margin. * can be a value from 0 to 5. Eg: mb-4 sets bottom margin to 1.5rem.
+				px-*: sets horizontal padding. * can be a value from 0 to 5. Eg: px-3 sets left and right padding to 1rem.
+				mx-*: sets horizontal margin. * can be a value from 0 to 5. Eg: mx-2 sets left and right margin to 0.5rem.
+			</code>
+		  </div>
+		  <div id="bgcolor-example">
+			<code>
+				<b>Background Color Classes</b>
+				bg-primary: sets background color to primary color.
+				bg-secondary: sets background color to secondary color.
+				bg-success: sets background color to success color.
+				bg-danger: sets background color to danger color.
+				bg-warning: sets background color to warning color.
+				bg-info: sets background color to info color.
+				bg-light: sets background color to light color.
+				bg-dark: sets background color to dark color.
+			</code>
+		  </div>
+		  <div id="textcolor-example">
+			<code>
+				<b>Text Color Classes</b>
+				text-primary: sets text color to primary color.
+				text-secondary: sets text color to secondary color.
+				text-success: sets text color to success color.
+				text-danger: sets text color to danger color.
+				text-warning: sets text color to warning color.
+				text-info: sets text color to info color.
+				text-light: sets text color to light color.
+				text-dark: sets text color to dark color.
+			</code>
+		  </div>
+		  <div id="display-example">
+			<code>
+				<b>Classes</b>
+				d-none: hides an element.
+				d-block: displays an element as a block-level element.
+				d-inline: displays an element as an inline-level element.
+				d-inline-block: displays an element as an inline-level block container.
+			</code>
+		  </div>
+		  <div id="width-example">
+			<code>
+				<b>width Classes</b>
+				w-25: sets width to 25%.
+				w-50: sets width to 50%.
+				w-75: sets width to 75%.
+				w-100: sets width to 100%.
+			</code>
+		  </div>
+		  <div id="spacing-example">
+			<code>
+				<b>Spacing:</b>
+
+				m-* - Margin classes (m-0, m-1, m-2, m-3, m-4, m-5)
+				p-* - Padding classes (p-0, p-1, p-2, p-3, p-4, p-5)
+				mt-* - Margin top classes (mt-0, mt-1, mt-2, mt-3, mt-4, mt-5)
+				mb-* - Margin bottom classes (mb-0, mb-1, mb-2, mb-3, mb-4, mb-5)
+				ml-* - Margin left classes (ml-0, ml-1, ml-2, ml-3, ml-4, ml-5)
+				mr-* - Margin right classes (mr-0, mr-1, mr-2, mr-3, mr-4, mr-5)
+				pt-* - Padding top classes (pt-0, pt-1, pt-2, pt-3, pt-4, pt-5)
+				pb-* - Padding bottom classes (pb-0, pb-1, pb-2, pb-3, pb-4, pb-5)
+				pl-* - Padding left classes (pl-0, pl-1, pl-2, pl-3, pl-4, pl-5)
+				pr-* - Padding right classes (pr-0, pr-1, pr-2, pr-3, pr-4, pr-5)
+			</code>
+		  </div>
+		  <div id="shadows-example">
+			<code>
+				Shadows:
+
+				shadow - Add a box-shadow to an element
+				shadow-sm - Add a small box-shadow to an element
+				shadow-lg - Add a large box-shadow to an element
+			</code>
+		  </div>
+		  <div id="alignment-example">
+			<code>
+				Alignment:
+
+				text-center - Center align text
+				text-left - Left align text
+				text-right - Right align text
+				d-flex - Set an element to display as a flex container
+				justify-content-center - Center align flex items horizontally
+				justify-content-start - Align flex items to the start of the container
+				justify-content-end - Align flex items to the end of the container
+				align-items-center - Center align flex items vertically
+				align-items-start - Align flex items to the top of the container
+				align-items-end - Align flex items to the bottom of the container
+			</code>
+		  </div>
+		  <div id="position-example">
+			<code>
+				Position:
+
+				position-static - Set an element to its default position (static)
+				position-relative - Set an element to a relative position
+				position-absolute - Set an element to an absolute position
+				position-fixed - Set an element to a fixed position
+				fixed-top - Set an element to be fixed at the top of the viewport
+				fixed-bottom - Set an element to be fixed at the bottom of the viewport
+			</code>
+		  </div>
+		  <div id="visible-example">
+			<code>
+				Visibility:
+
+				visible - Set an element to be visible
+				invisible - Set an element to be invisible
+			</code>
+		  </div>
+		  
+		</div>
+
+
+	</div>
+	<div class="container pt-3">
+		<h1>Jquery Snippets</h1>
+		<p>Click on a button to see an example of Jquery code:</p>
+		<div class="card-deck">
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">DOM Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			  <button type="button" class="btn btn-primary code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#DOM-example">DOM</button>
+			  
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<!-- <img src="..." class="card-img-top" alt="..."> -->
+			<div class="card-body">
+			  <h5 class="card-title">Event listeners Snippet</h5>
+			  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+			  <button type="button" class="btn btn-secondary code-btn" data-toggle="modal" data-target="#codeModal" data-snippet="#eventlisteners-example">Eventlisteners</button>
+	  
+			</div>
+		</div>
+		
+	</div>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="codeModalLabel">Code Snippet</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <pre><code></code></pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Code Snippets -->
+		<div class="d-none">
+			<div id="DOM-example">
+				<code>
+					Adding a class to an element:
+					<code>$("&lt;selector&gt;").addClass("&lt;class&gt;");</code>
+
+					Removing a class from an element:
+					<code>$("&lt;selector&gt;").removeClass("&lt;class&gt;");</code>
+
+					Toggling a class on an element:
+					<code>$("&lt;selector&gt;").toggleClass("&lt;class&gt;");</code>
+
+					Setting the text of an element:
+					<code>$("&lt;selector&gt;").text("&lt;text&gt;");</code>
+
+					Getting the text of an element:
+					<code>$("&lt;selector&gt;").text();</code>
+
+					Setting the HTML content of an element:
+					<code>$("&lt;selector&gt;").html("&lt;html&gt;");</code>
+
+					Getting the HTML content of an element:
+					<code>$("&lt;selector&gt;").html();</code>
+
+					Hiding an element:
+					<code>$("&lt;selector&gt;").hide();</code>
+
+					Showing an element:
+					<code>$("&lt;selector&gt;").show();</code>
+
+					Fading an element in:
+					<code>$("&lt;selector&gt;").fadeIn();</code>
+
+					Fading an element out:
+					<code>$("&lt;selector&gt;").fadeOut();</code>
+
+					Sliding an element up:
+					<code>$("&lt;selector&gt;").slideUp();</code>
+
+					Sliding an element down:
+					<code>$("&lt;selector&gt;").slideDown();</code>
+
+					Getting the value of an input element:
+					<code>$("&lt;selector&gt;").val();</code>
+
+					Setting the value of an input element:
+					<code>$("&lt;selector&gt;").val("&lt;value&gt;");</code>
+				</code>
+			</div>
+			<div id="eventlisteners-example">
+			<code>
+				Click event listener:
+			<code>$("button").click(function(){
+			// Code to be executed when button is clicked
+			});</code>
+
+			Mouseover event listener:
+			<code>$("p").mouseover(function(){
+			// Code to be executed when mouse is over the paragraph
+			});</code>
+
+			Keydown event listener:
+			<code>$("input").keydown(function(){
+			// Code to be executed when a key is pressed down in the input field
+			});</code>
+
+			Scroll event listener:
+			<code>$(window).scroll(function(){
+			// Code to be executed when the user scrolls the window
+			});</code>
+
+			Submit event listener:
+			<code>$("form").submit(function(){
+			// Code to be executed when the form is submitted
+			});</code>
+
+
+			Listening for a key press event:
+			<code>&lt;script&gt;
+			$(document).on('keypress', function(event) {
+			console.log('You pressed the ' + event.key + ' key.');
+			});
+			&lt;/script&gt;</code>
+
+			Listening for a mouse enter event:
+			<code>&lt;script&gt;
+			$('button').on('mouseenter', function() {
+			$(this).css('background-color', 'red');
+			});
+			&lt;/script&gt;</code>
+
+			Listening for a form submission event:
+			<code>&lt;script&gt;
+			$('form').on('submit', function(event) {
+			event.preventDefault();
+			console.log('Form submitted!');
+			});
+			&lt;/script&gt;</code>
+
+			Listening for a window resize event:
+			<code>&lt;script&gt;
+			$(window).on('resize', function() {
+			console.log('Window resized!');
+			});
+			&lt;/script&gt;</code>
+			</code>
+			</div>
+			
+								
+		</div>
+
+	</div>
+	<div class="pt-3"></div>
+
+	
+</body>
+</html>
